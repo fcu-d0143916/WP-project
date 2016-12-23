@@ -1,12 +1,12 @@
 ﻿<!doctor html>
 
  <head>
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>訂單頁面</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+  <link href="css/register.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -21,11 +21,29 @@
     <!-- Custom Fonts -->
 
 
+  <style>
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+  </style>
   
  </head>
 
  <body>
-    <!-- Navigation -->
+
+  <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -117,25 +135,59 @@
 <br></br><br>
 
 <div class="container">
-  
-  <img src="images/order1.png" class="img-thumbnail" alt="Cinque Terre" width="743" height="34">
-  <p>選擇付款方式</p>
-  <form>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">信用卡
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">WebATM
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio">超商付款
-    </label>
-  </form>
-    <input type="button" value="下一步" onclick="location.href='order2.html'">
-</div>
 
+  <img src="images/order3.png" class="img-thumbnail" alt="Cinque Terre" width="743" height="34">
+  <p>完成訂購</p>
 
- 
+  <section>
+   <p>親愛的 XXX 您好，</p>
+   <p>謝謝您的訂購，您的訂單編號為： 201601010000000</p>
+  </section>
+
+  <p><b>購物明細：</b></p>
+  <table>
+    <tr>
+     <th>明細</th>
+     <th>優惠價</th>
+     <th>數量</th>
+     <th>小計</th>
+     <th>現貨庫存</th>
+    </tr>
+    <tr>
+     <td>籃球鞋 Lebron Soldier IX TB EP 9代 LBJ 紅白 男鞋(749500-601)</td>
+     <td>3000</td>
+     <td>1</td>
+     <td>3000</td>
+     <td>有</td>
+    </tr>
+    <tr>
+     <td>DIMENSIONAL 1 – 黑／湖水綠 雙面穿球衣</td>
+     <td>1,250</td>
+     <td>2</td>
+     <td>2500</td>
+     <td>有</td>
+    </tr>
+    <tr>
+     <td>NCAA單層雙面穿輕量球褲-湖藍/機能黑C614503-580</td>
+     <td>590</td>
+     <td>1</td>
+     <td>590</td>
+     <td>有</td>
+    </tr>
+  </table>
+
+  <br></br>
+
+  <table>
+   <tr>
+    <td>本筆訂單需付款金額：NT$ 6090 元</td>
+   </tr>
+  </table>
+
+  <br></br>
+
+  <input type="button" value="回首頁" onclick="location.href='index.html'">
+
  </body>
 
 </html>
